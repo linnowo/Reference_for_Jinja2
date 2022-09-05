@@ -6,6 +6,8 @@ The file `refer.j2` is a tool for inline citations in Jinja2. It'll create a sma
 
 This is designed for the sex education website [KnowSex.net](https://knowsex.net).
 
+<img src="demo.jpg" width="600px" alt="Preview image.">
+
 ## Usage
 
 Import it on the page.
@@ -61,6 +63,8 @@ It will make the reference with `<li>` inside `<ol class="reference-list">`.
 `refer.j2` 是为 Jinja2 的行内引用设计的。它可以创建一个参考资料的序号角标。
 
 此工具为性教育网站“[知性 KnowSex](https://knowsex.net) ”设计。
+
+<img src="demo.jpg" width="600px" alt="示意图。">
 
 ## 使用办法
 在页面引用该文件。
