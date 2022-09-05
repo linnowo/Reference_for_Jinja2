@@ -1,0 +1,17 @@
+{% macro mark(name_ref, data = data, page="") -%}
+{# Reference mark in content #}
+{%- for i in data.refer_list -%}
+{%- if i.name == name_ref -%}
+<sup id="cite_ref-{{ name_ref }}" class="reference"><a href="#cite_note-{{ name_ref }}" target="_self">[{{ loop.index }}]</a>{{ page }}</sup>
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro %}
+
+{% macro footer(data = data) -%}
+{# Reference list in footer #}
+<ol class="reference-list">
+{% for i in data.refer_list -%}
+<li id="cite_note-{{ i.name }}"><span class="mw-cite-backlink"><b><a href="#cite_ref-{{ i.name }}" aria-label="跳转" title="跳转" target="_self">^</a></b></span><span class="reference-text">{{ i.caption }}{%- if i.url -%}.&nbsp;<a href="{{ i.url }}">{{ i.url }}</a>.{%- endif -%}</span></li>
+{% endfor %}
+</ol>
+{%- endmacro %}
