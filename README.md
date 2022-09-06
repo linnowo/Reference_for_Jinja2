@@ -28,9 +28,9 @@ For example:
 ```jinja
 {% set data = [
     {
-            "name": "WCU2020",
-            "caption": "United Nations, Department of Economic and Social Affairs, Population Division (2020). World Contraceptive Use 2020[DS/OL]",
-            "url": "https://www.un.org/en/development/desa/population/publications/dataset/contraception/wcu2020.asp"
+        "name": "WCU2020",
+        "caption": "United Nations, Department of Economic and Social Affairs, Population Division (2020). World Contraceptive Use 2020[DS/OL]",
+        "url": "https://www.un.org/en/development/desa/population/publications/dataset/contraception/wcu2020.asp"
     },
     {
         "name": "SBHM",
@@ -51,7 +51,7 @@ It will display as:
 
 Use this to place a reference list:
 ```jinja
-{{ refer.footer(data) }}
+{{ refer.footer(reference_variable) }}
 ```
 It will make the reference with `<li>` inside `<ol class="reference-list">`.
 
@@ -85,9 +85,9 @@ It will make the reference with `<li>` inside `<ol class="reference-list">`.
 ```jinja
 {% set data = [
     {
-            "name": "WCU2020",
-            "caption": "United Nations, Department of Economic and Social Affairs, Population Division (2020). World Contraceptive Use 2020[DS/OL]",
-            "url": "https://www.un.org/en/development/desa/population/publications/dataset/contraception/wcu2020.asp"
+        "name": "WCU2020",
+        "caption": "United Nations, Department of Economic and Social Affairs, Population Division (2020). World Contraceptive Use 2020[DS/OL]",
+        "url": "https://www.un.org/en/development/desa/population/publications/dataset/contraception/wcu2020.asp"
     },
     {
         "name": "SBHM",
@@ -108,7 +108,7 @@ Lorem ipsum dolor sit amet,{{ refer.mark('WCU2020', data) }} consectetur adipisc
 
 参考文献列表的生成使用如下：
 ```jinja
-{{ refer.footer(data) }}
+{{ refer.footer(参考文献列表变量) }}
 ```
 它将会在 `<ol class="reference-list">` 元素中创建若干含有单条参考文献的 `<li>` 变量：
 
