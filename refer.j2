@@ -2,7 +2,7 @@
 {# Reference mark in content #}
 {%- for i in data -%}
 {%- if i.name == name_ref -%}
-<sup id="cite_ref-{{ name_ref }}" class="reference"><a href="#cite_note-{{ name_ref }}" target="_self">[{{ loop.index }}]</a>{{ page }}</sup>
+<sup id="cite_ref-{{ name_ref }}" class="reference"><a href="#cite_note-{{ name_ref }}" target="_self">[{{ loop.index }}]</a>{%- if page -%}:{{ page }}{%- endif -%}</sup>
 {%- endif -%}
 {%- endfor -%}
 {%- endmacro %}
