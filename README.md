@@ -62,7 +62,7 @@ It will make the reference with `<li>` inside `<ol class="reference-list">`.
 # 中文文档
 `refer.j2` 是为 Jinja2 的行内引用设计的。它可以创建一个参考资料的序号角标。
 
-此工具为性教育网站“[知性 KnowSex](https://knowsex.net) ”设计。
+此工具为性教育网站“[KnowSex](https://knowsex.net) ”设计。
 
 <img src="demo.jpg" width="600px" alt="示意图。">
 
